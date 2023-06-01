@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel = "stylesheet" href = "pkids.css">
+	</head>
+	<body>
+		<div class = "header">
+		<a href = "#"><img src = "logo.png" style = "width: 50px; height: 50px"></a>
+		</div>
+		<nav class = "navbar">
+			<ul>
+				<h1> Quantum Physics </h1>
+				<li><a href = "about_me.html">Join Now</a></li>
+				<li><a href = "calcu.html" class = "mudrop">Solve One!</a></li>
+				<li class = "mudrop"><a>All about Quantum Physics</a>
+					<ul class = "dropdown">
+						<li><a href = "index.html">Home</a></li>
+						<li><a href = "pteen.html">Quantum Physics for Adults</a></li>
+					</ul>
+				</li>
+			</ul>
+		</nav>
+		<br>
+		<section>
+		<div id = "container">
+			<h1>For Kids</h1>
+		</div>
+		</section>
+		<div id = "containers">
+			<img id="image" src="" alt="Image" id = "pageimage"> <br>
+			<button id="prevButton" onclick="prevImage()";>Previous</button>
+			<button id="nextButton" onclick="nextImage()">Next</button>
+		</div> <br>
+
+    <script>
+        var images = ["page1.png", "page2.png", "page3.png", "page4.png", "page5.png", "page6.png", "page7.png", "page8.png", "page9.png", "page10.png", "page11.png", "page12.png"];
+
+        var currentIndex = 0;
+        var imageElement = document.getElementById("image");
+
+        function prevImage() {
+            if (currentIndex === 0) {
+                currentIndex = images.length - 1;
+            } else {
+                currentIndex--;
+            }
+            updateImage();
+        }
+
+        function nextImage() {
+            if (currentIndex === images.length - 1) {
+                currentIndex = 0;
+            } else {
+                currentIndex++;
+            }
+            updateImage();
+        }
+
+        function updateImage() {
+            var imageUrl = images[currentIndex];
+            imageElement.src = imageUrl;
+        }
+
+        updateImage();
+    </script>
+	</body>
+</html>

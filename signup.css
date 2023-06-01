@@ -1,0 +1,94 @@
+*{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	text-decoration: none;
+	box-sizing: border-box;
+}
+body{
+	background-image: url('quantumbackground.jpg');
+	background-size: cover;
+}
+.header img{
+	background-color: #F0E4CE;
+	position: absolute;
+	margin-top: 4px;
+	margin-left: 10px;
+}
+.navbar{
+	width: 100%;
+	background: #F0E4CE;
+	overflow: auto;
+}
+.navbar2{
+	padding: 0px;
+	margin: 0 0 0 75px;
+	list-style: none;
+}
+li{
+	float: right;
+	font-size: 20px;
+	padding-top: 20px;
+}
+.navbar h1{
+	margin-left: 60px;
+	display: block;
+	float: left;
+	font-size: 36px;
+	padding: 8px;
+}
+.navbar a{
+	width: 265px;
+	display: block;
+	text-decoration: none;
+	font-family: Arial;
+	color: black;
+	text-align: center;
+}
+.navbar a:hover{
+	transition: 0.6s;
+	color: orange;
+	font-weight: bold;
+}
+ul li ul.dropdown li{
+	display: block;
+}
+ul li ul.dropdown{
+	width: 265px;
+	background: #ADD8E6;
+	position: absolute;
+	z-index: 5;
+	display: none;
+	transition: 0.6s;
+}
+ul li.mudrop:hover{
+	background: #DE7E5D;
+	transition: 0.6s;
+}
+ul li.mudrop:hover ul.dropdown{
+	display: block;
+}
+section{
+	background-image: url('realquantum.png',);
+	height: 100px;
+	max-width: 200px;
+	margin: auto;
+}
+section h1{
+	padding-top:34px;
+	padding-left: 40px;
+	color: white;
+}
+.signing{
+	
+	background-color: #ADD8E6;
+	color: white;
+	font-size: 20px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	margin-left: 600px;
+	margin-right: 50%;
+	width: 300px;
+}

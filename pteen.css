@@ -1,0 +1,161 @@
+*{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	text-decoration: none;
+	box-sizing: border-box;
+}
+body{
+	background-image: url('quantumbackground.jpg');
+	background-size: cover;
+}
+.header img{
+	background-color: #F0E4CE;
+	position: absolute;
+	margin-top: 4px;
+	margin-left: 10px;
+}
+.navbar{
+	width: 100%;
+	background: #F0E4CE;
+	overflow: auto;
+}
+.navbar2{
+	padding: 0px;
+	margin: 0 0 0 75px;
+	list-style: none;
+}
+li{
+	float: right;
+	font-size: 20px;
+	padding-top: 20px;
+}
+.navbar h1{
+	margin-left: 60px;
+	display: block;
+	float: left;
+	font-size: 36px;
+	padding: 8px;
+}
+.navbar a{
+	width: 265px;
+	display: block;
+	text-decoration: none;
+	font-family: Arial;
+	color: black;
+	text-align: center;
+}
+.navbar a:hover{
+	transition: 0.6s;
+	color: orange;
+	font-weight: bold;
+}
+ul li ul.dropdown li{
+	display: block;
+}
+ul li ul.dropdown{
+	width: 265px;
+	background: #ADD8E6;
+	position: absolute;
+	z-index: 5;
+	display: none;
+	transition: 0.6s;
+}
+ul li.mudrop:hover{
+	background: #DE7E5D;
+	transition: 0.6s;
+}
+ul li.mudrop:hover ul.dropdown{
+	display: block;
+}
+section{
+	background-image: url('realquantum.png',);
+	height: 100px;
+	max-width: 200px;
+	margin: auto;
+}
+section h1{
+	padding-top:34px;
+	padding-left: 68px;
+	color: white;
+}
+.qmecha{
+    background: repeating-linear-gradient(
+    45deg,
+    #35D6ED,
+        #35D6ED 20px,
+        #7AE5F5 20px,
+        #7AE5F5 50px,
+        #C9F6FF 50px,
+        #C9F6FF 70px
+    );
+	border: 3px solid;
+	margin-left: 75px;
+	margin-right: 75px;
+	
+}
+.qmecha h1{
+	margin-left: 550px;
+	margin-right: 500px;
+}
+.qmecha .p1{
+	padding-top: 10px;
+	padding-bottom: 33.5px;
+	margin-top: -485px;
+	margin-left: 277px;
+	font-size: 20px;
+}
+.atomphy{
+    background: repeating-linear-gradient(
+    135deg,
+    #35D6ED,
+        #35D6ED 20px,
+        #7AE5F5 20px,
+        #7AE5F5 50px,
+        #C9F6FF 50px,
+        #C9F6FF 70px
+    );
+	border: 3px solid;
+	margin-left: 75px;
+	margin-right: 75px;
+	margin-top: 25px;
+	
+}
+.atomphy h1{
+	margin-left: 580px;
+	margin-right: 550px;
+}
+.atomphy .p1{
+	padding-top: 10px;
+	padding-bottom: 33.5px;
+	margin-top: -485px;
+	margin-left: 277px;
+	font-size: 20px;
+}
+.molphy{
+    background: repeating-linear-gradient(
+    45deg,
+    #35D6ED,
+        #35D6ED 20px,
+        #7AE5F5 20px,
+        #7AE5F5 50px,
+        #C9F6FF 50px,
+        #C9F6FF 70px
+    );
+	border: 3px solid;
+	margin-left: 75px;
+	margin-right: 75px;
+	margin-top: 25px;
+	
+}
+.molphy h1{
+	margin-left: 560px;
+	margin-right: 550px;
+}
+.molphy .p1{
+	padding-top: 10px;
+	padding-bottom: 33.5px;
+	margin-top: -485px;
+	margin-left: 277px;
+	font-size: 20px;
+}

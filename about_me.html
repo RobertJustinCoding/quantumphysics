@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Sign Up</title>
+		<link rel = "stylesheet" href = "signup.css"
+	</head>
+<body>
+	<div class = "header">
+		<a href = "#"><img src = "logo.png" style = "width: 50px; height: 50px"></a>
+		</div>
+		<nav class = "navbar">
+			<ul>
+				<h1> Quantum Physics </h1>
+				<li><a href = "about_me.html">Join Now</a></li>
+				<li><a href = "calcu.html" class = "mudrop">Solve One!</a></li>
+				<li class = "mudrop"><a>All about Quantum Physics</a>
+					<ul class = "dropdown">
+						<li><a href = "index.html">Home</a></li>
+						<li><a href = "pteen.html">Quantum Physics for Kids</a></li>
+					</ul>
+				</li>
+			</ul>
+		</nav>
+		<br>
+		
+		<section>
+		<div id = "container">
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+			<h1>Sign Up</h1>
+		</div>
+		</section>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+	  <div class = "signing">
+	  <br>
+	  <form id="signupForm" onsubmit="return validateForm()">
+		<label for="username">Username:</label>
+		<input type="text" id="username" required><br>
+
+		<label for="email">Email:</label>
+		<input type="email" id="email" required><br>
+
+		<label for="birthdate">Birth Date:</label>
+		<input type="date" id="birthdate" required><br>
+
+		<label for="password">Password:</label>
+		<input type="password" id="password" required><br>
+
+		<button type="submit">Sign Up</button>
+	  </form>
+	  <br>
+	  </div>
+	</body>
+	<script>
+function validateForm() {
+  var username = document.getElementById("username").value;
+  var email = document.getElementById("email").value;
+  var birthdate = document.getElementById("birthdate").value;
+  var password = document.getElementById("password").value;
+
+  // Validation logic goes here (e.g., checking for valid email format, password requirements, etc.)
+
+  // Confirmation dialog
+  if (confirm("Are you sure you want to sign up?")) {
+    // Retrieve existing usernames from localStorage
+    var existingUsernames = JSON.parse(localStorage.getItem("usernames")) || [];
+
+    // Add the new username to the list
+    existingUsernames.push(username);
+
+    // Store the updated list in localStorage
+    localStorage.setItem("usernames", JSON.stringify(existingUsernames));
+
+    displayUsernames(); // Call the function to display usernames
+    alert("Information received. Please wait for two months for confirmation and be able to enjoy this website without the need of saving your progress manually!")
+    return true;
+  } else {
+    // User canceled the sign-up process
+    alert("Sign up canceled!");
+    return false;
+  }
+}
+	</script>
+</html>																									
